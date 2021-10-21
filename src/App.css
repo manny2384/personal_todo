@@ -1,5 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
 .App {
   text-align: center;
+  background-image: url("./imgs/todoImage.jpg");
+  height: 90vh;
+  width: 100vw;
+  padding-top: 10vh;
 }
 
 .App-logo {
@@ -35,4 +45,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.TodoList{
+  width: 70%;
+  height: 50%;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+  list-style: none;
+  overflow: auto;
+}
+
+.main_btns{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.New_item_form{
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.New_item_style{
+  margin: auto;
+  width: fit-content;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.New_item_labels{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.New_item_labels label{
+  padding: 5px;
+}
+.New_item_labels label input{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.New_item_btns{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.New_item_btns input{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.TodoListItem{
+  border: solid 1px black;
+  margin: 5px;
+  border-radius: 20px;
+}
+.TodoListItem:hover{
+  cursor: pointer;
+  background-color: grey;
+}
+.TodoListItem div{
+  padding: 5px;
 }
