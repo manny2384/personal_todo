@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/personal_todo/static/css/main.02c9f145.chunk.css",
-    "main.js": "/personal_todo/static/js/main.397ede05.chunk.js",
-    "main.js.map": "/personal_todo/static/js/main.397ede05.chunk.js.map",
+    "main.css": "/personal_todo/static/css/main.9f35d365.chunk.css",
+    "main.js": "/personal_todo/static/js/main.1cdf38da.chunk.js",
+    "main.js.map": "/personal_todo/static/js/main.1cdf38da.chunk.js.map",
     "runtime-main.js": "/personal_todo/static/js/runtime-main.fdfcd8bb.js",
     "runtime-main.js.map": "/personal_todo/static/js/runtime-main.fdfcd8bb.js.map",
     "static/js/2.e090f0f7.chunk.js": "/personal_todo/static/js/2.e090f0f7.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.ed94a391.chunk.js": "/personal_todo/static/js/3.ed94a391.chunk.js",
     "static/js/3.ed94a391.chunk.js.map": "/personal_todo/static/js/3.ed94a391.chunk.js.map",
     "index.html": "/personal_todo/index.html",
-    "static/css/main.02c9f145.chunk.css.map": "/personal_todo/static/css/main.02c9f145.chunk.css.map",
+    "static/css/main.9f35d365.chunk.css.map": "/personal_todo/static/css/main.9f35d365.chunk.css.map",
     "static/js/2.e090f0f7.chunk.js.LICENSE.txt": "/personal_todo/static/js/2.e090f0f7.chunk.js.LICENSE.txt",
     "static/media/App.css": "/personal_todo/static/media/todoImage.83534d14.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.fdfcd8bb.js",
     "static/js/2.e090f0f7.chunk.js",
-    "static/css/main.02c9f145.chunk.css",
-    "static/js/main.397ede05.chunk.js"
+    "static/css/main.9f35d365.chunk.css",
+    "static/js/main.1cdf38da.chunk.js"
   ]
 }
