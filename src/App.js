@@ -128,7 +128,7 @@ class App extends React.Component {
   render (){
 
     return(   
-      <div>
+      <div style={{height:"100%"}}>
         <div className="App">
         
           <ul className="TodoList"> 
@@ -136,7 +136,7 @@ class App extends React.Component {
           </ul>
           
           <div className="main_btns">
-            <input type="button" value="Click to Add Item" onClick={this.toggleOpen} />
+            <input type="button" value="ADD ITEM" onClick={this.toggleOpen} />
             
             <button onClick={this.clearStorage} type="submit"> CLEAR ALL </button>
           </div>
