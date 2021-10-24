@@ -138,7 +138,6 @@ class App extends React.Component {
           <div className="main_btns">
             <input type="button" value="ADD ITEM" onClick={this.toggleOpen} />
             
-            <button onClick={this.clearStorage} type="submit"> CLEAR ALL </button>
           </div>
         </div>
 
