@@ -28,8 +28,18 @@ class App extends React.Component {
 
     // try to retrieve localstorage todo items
     if(localStorage.getItem("my_todo")){
+      let arr = JSON.parse(localStorage.getItem("my_todo"));
 
-      this.setState({list: JSON.parse(localStorage.getItem("my_todo"))});
+      // sort list
+      arr = arr.sort((x, y) => {
+        if(x[1] < y[1]) return -1;
+        else if(x[1] < y[1]) return 1;
+        else return 0;
+      });
+
+
+      this.setState({list: arr});
+      
       console.log(JSON.parse(localStorage.getItem("my_todo")));
 
     }else{
@@ -79,7 +89,11 @@ class App extends React.Component {
     // add new item to list of items
     this.setState((state, props) => {
       return {
-        list: state.list.concat([[itemName, itemDate]]),
+        list: state.list.concat([[itemName, itemDate]]).sort((x, y) => {
+          if(x[1] < y[1]) return -1;
+          else if(x[1] < y[1]) return 1;
+          else return 0;
+        }),
         show_form: !state.show_form
       }
     });
