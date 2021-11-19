@@ -7,9 +7,12 @@
 html, body{
   height: 100%;
 }
+#root{
+  background-image: url("./imgs/todoImage.jpg");
+  background-size: cover;
+}
 .App {
   text-align: center;
-  background-image: url("./imgs/todoImage.jpg");
   height: 90%;
   width: 100vw;
   padding-top: 10vh;
@@ -135,4 +138,8 @@ html, body{
 }
 .TodoListItem div{
   padding: 5px;
+}
+
+.EditingItem{
+
 }

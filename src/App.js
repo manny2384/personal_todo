@@ -27,8 +27,10 @@ class App extends React.Component {
   componentDidMount(){
 
     // try to retrieve localstorage todo items
-    if(localStorage.getItem("my_todo")){
+    if(localStorage.getItem("my_todo") && JSON.parse(localStorage.getItem("my_todo")) != null){
       let arr = JSON.parse(localStorage.getItem("my_todo"));
+
+      console.log("my_todo array = ", arr);
 
       // sort list
       arr = arr.sort((x, y) => {
@@ -146,7 +148,7 @@ class App extends React.Component {
         <div className="App">
         
           <ul className="TodoList"> 
-            <TodoList todo={this.state.list} onDelete={this.handleDelete} />
+            <TodoList todo={this.state.list} edit={this.toggleOpen} onDelete={this.handleDelete} />
           </ul>
           
           <div className="main_btns">

@@ -1,3 +1,5 @@
+
+
 function TodoList(props){
 
     console.log(props);
@@ -11,7 +13,7 @@ function TodoList(props){
     {  
       const returner = props['todo'].map((item, index)=>{
         return <li onClick={()=>{
-
+          // props.edit();
         }} className="TodoListItem" key={index+1}> 
                 <div> {item[0]} </div> 
                 <div> Due: {item[1]} </div>
